@@ -29,7 +29,7 @@ If you use this repository, please consider citing our paper:
   year      = {2025},
   archivePrefix = {arXiv},
   primaryClass  = {cs.LG},
-  url       = {_Coming soon_}
+  url       = {Coming soon}
 }
 ```
 ---
@@ -112,8 +112,26 @@ This project is part of a broader family of FPGA-optimized time-series models. Y
 - **OnDevice1D-(Sep)CNN** → coming soon
 
 ---
+
+### Related Publications
+
+This work builds upon our previous research, which provide the foundational methodologies and evaluation frameworks that inform the current implementation.
+
+**📄 Previous Publications:**
+
+1. [Data-driven Modeling of Combined Sewer Systems for Urban Sustainability: An Empirical Evaluation](https://www.hiig.de/wp-content/uploads/2024/09/Singh2024-SewerSystems.pdf)
+   **Authors**: Vipin Singh, Tianheng Ling, Teodor Chiaburu, Felix Biessmann*  
+   **Published in**: 47th German Conference on AI (2nd Workshop on Public Interest AI) 2025 
+
+2. [Evaluating Time Series Models for Urban Wastewater Management: Predictive Performance, Model Complexity and Resilience](https://arxiv.org/abs/2504.17461)
+   **Authors**: Vipin Singh, Tianheng Ling, Teodor Chiaburu, Felix Biessmann*  
+   **Published in**: 10th IEEE International Conference on Smart and Sustainable Technologies (SpliTech) 2025
+    **Code**: [GitHub Repository](https://github.com/calgo-lab/resilient-timeseries-evaluation)
+
+---
 ###  Acknowledgement
-This work is supported by the German Federal Ministry for Economic Affairs and Climate Action under the RIWWER project (01MD22007C,01MD22007H). 
+This work is supported by the German Federal Ministry for Economic Affairs and Climate Action under the RIWWER project (01MD22007C, 01MD22007H). 
+
 
 ---
 
