@@ -19,7 +19,7 @@ This repository provides:
 
 **"Automated Energy-Aware Time-Series Model Deployment on Embedded FPGAs for Resilient Combined Sewer Overflow Management"**  
 📌 Accepted at **11th IEEE International Smart Cities Conference (2025)**  
-📄 Preprint — _Coming soon_
+📄 Preprint at [link](https://arxiv.org/abs/2508.13905)
 
 If you use this repository, please consider citing our paper:
 ```bibtex
@@ -29,7 +29,7 @@ If you use this repository, please consider citing our paper:
   year      = {2025},
   archivePrefix = {arXiv},
   primaryClass  = {cs.LG},
-  url       = {Coming soon}
+  url       = {https://arxiv.org/abs/2508.13905}
 }
 ```
 ---
