@@ -107,10 +107,16 @@ bash scripts/optuna/quant_train.sh
 ### Related Repositories
 This project is part of a broader family of FPGA-optimized time-series models. You may also be interested in:
 
-- **OnDeviceSoftSensorMLPs** → [GitHub Repository](https://github.com/tianheng-ling/OnDeviceSoftSensorMLP)  
-- **TinyTransformer4TS** → [GitHub Repository](https://github.com/tianheng-ling/TinyTransformer4TS)  
-- **OnDeviceRunningGaitRecognition** → [GitHub Repository](https://github.com/tianheng-ling/StrikeWatch)
-- **OnDevice1D-(Sep)CNN** → coming soon
+- **OnDevice-MLP** → [GitHub Repository](https://github.com/tianheng-ling/OnDeviceSoftSensorMLP)  
+- **OnDevice-1D(Sep)CNN** → [GitHub Repository](https://github.com/tianheng-ling/Smatable)
+- **OnDevice-Transformer** → [GitHub Repository](https://github.com/tianheng-ling/TinyTransformer4TS)
+- **OnDevice Running Gait Recognition** → [GitHub Repository](https://github.com/tianheng-ling/StrikeWatch)
+- **OnDevice Swipe Direction Recognition** → [GitHub Repository](https://github.com/tianheng-ling/Smatable)
+- 
+
+
+
+
 ---
 
 ### Related Publications
