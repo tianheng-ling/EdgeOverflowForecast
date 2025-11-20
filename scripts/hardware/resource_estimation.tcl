@@ -35,8 +35,13 @@ launch_runs synth_1 -jobs 8
 wait_on_run synth_1
 open_run synth_1 -name synth_1
 
+set_property STEPS.WRITE_BITSTREAM.ARGS.BIN_FILE true [get_runs impl_1]
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+
 # generate resource utilization report
 report_utilization -file "$report_dir/utilization_report.txt"
 report_utilization -hierarchical -file "$report_dir/utilization_breakdown.txt"
 report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1 -file "$report_dir/timing_report.txt"
 
+exit  ;

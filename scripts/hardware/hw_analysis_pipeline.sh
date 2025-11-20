@@ -58,6 +58,7 @@ do
     source /tools/Xilinx/Vivado/2019.2/settings64.sh
     vivado -mode tcl -source resource_estimation.tcl -tclargs $vivado_report_dir  -nojournal -nolog < /dev/null
     vivado -mode tcl -source power_estimation.tcl -tclargs $saif_file_name $vivado_report_dir "${simu_time}fs" $top_module_name -nojournal -nolog < /dev/null
+    cp $tmp_vivado_dir/proj_resource/proj_resource.runs/impl_1/env5_top_reconfig.bin $vivado_report_dir/env5_top_reconfig.bin
     cd -
 
     # [Optional] remove tmp_vivado_dir

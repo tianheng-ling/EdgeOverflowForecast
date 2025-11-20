@@ -6,6 +6,7 @@ from datetime import datetime
 from pathlib import Path
 
 from optuna_utils.run_ghdl_simulation import run_ghdl_simulation
+import shutil
 
 
 def clean_key(key):
@@ -231,6 +232,24 @@ def vivado_runner(base_dir: str, top_module: str, trial: object):
                 "energy_used(mJ)": energy_used,
             }
         )
+        # Copy generated bitstream file for FPGA programming
+        try:
+            src_bin = os.path.join(
+                tmp_dir,
+                "proj_resource",
+                "proj_resource.runs",
+                "impl_1",
+                "env5_top_reconfig.bin",
+            )
+            dst_bin = os.path.join(report_dir, "env5_top_reconfig.bin")
+            if os.path.exists(src_bin):
+                shutil.copy2(src_bin, dst_bin)
+                print(f"Copied bitfile to: {dst_bin}")
+            else:
+                print(f"Bitfile not found at expected location: {src_bin}")
+        except Exception as e:
+            print(f"Warning: failed to copy bitfile: {e}")
+
     except Exception as e:
         print(f"[Error] Power estimation failed: {e}")
         raise optuna.exceptions.TrialPruned()
